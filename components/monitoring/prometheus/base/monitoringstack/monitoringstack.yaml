@@ -138,6 +138,7 @@ spec:
 
         - '{__name__="kube_deployment_status_replicas_ready", namespace="gitops-service-argocd"}'
         - '{__name__="kube_deployment_spec_replicas", namespace=~"gitops-service-argocd"}'
+        - '{__name__="high_memory_usage_alert_test", namespace!~".*-tenant|openshift-.*|kube-.*"}'
 
         # Namespace (expression):  "build-service"
         - '{__name__="kube_deployment_status_replicas_ready", namespace="build-service"}'
