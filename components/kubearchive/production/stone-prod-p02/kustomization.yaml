@@ -129,6 +129,7 @@ patches:
           spec:
             containers:
               - name: migration
+                image: quay.io/kubearchive/postgresql:v1.21.3@sha256:2ce1545b19d29bd36c1022de13f451f14847aed04d62ab896a3254d74f7c0d39
                 env:
                   - name: MIGRATION_VERSION
                     valueFrom:
